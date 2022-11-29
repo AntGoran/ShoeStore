@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="shoeItemList"
+            type="com.udacity.shoestore.models.Shoe" />
+    </data>
+
+    <!-- ContstraintLayout because it is easier to place view in desired position-->
+    <!-- Could use LinearLayout as well, but would have to make 4 LinearLayouts inside one LinearLayout-->
+    <!-- CardView would be good as well, even nicer than ConstraintLayout or LinearLayout-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/shoeItemLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/shoe_company_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:minWidth="150dp"
+            android:text="@string/shoes_name_textView"
+            android:textSize="12sp"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="@+id/shoe_name_text"
+            app:layout_constraintTop_toBottomOf="@+id/shoe_name_text" />
+
+
+        <TextView
+            android:id="@+id/shoe_company_editText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/shoes_name_editText"
+            android:textSize="12sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/shoe_company_text"
+            app:layout_constraintEnd_toEndOf="@+id/shoes_name_editText"
+            app:layout_constraintStart_toStartOf="@+id/shoes_name_editText"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/shoe_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:minWidth="150dp"
+            android:text="@string/shoes_company_textView"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/addShoes_textView"
+            app:layout_constraintTop_toBottomOf="@+id/addShoes_textView" />
+
+        <TextView
+            android:id="@+id/shoes_name_editText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:hint="@string/shoes_company_editText"
+            android:textSize="12sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/shoe_name_text"
+            app:layout_constraintEnd_toEndOf="@+id/addShoes_textView"
+            app:layout_constraintStart_toEndOf="@+id/shoe_name_text"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/shoe_size_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:minWidth="150dp"
+            android:text="@string/shoes_size_textView"
+            android:textSize="12sp"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="@+id/shoe_company_text"
+            app:layout_constraintTop_toBottomOf="@+id/shoe_company_text" />
+
+        <TextView
+            android:id="@+id/shoe_size_editText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/shoes_size_editText"
+            android:textSize="12sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/shoe_size_text"
+            app:layout_constraintEnd_toEndOf="@+id/shoe_company_editText"
+            app:layout_constraintStart_toStartOf="@+id/shoe_company_editText"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/shoe_description_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/shoes_description_textView"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/shoe_size_text"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="@+id/shoe_size_text"
+            app:layout_constraintTop_toBottomOf="@+id/shoe_size_text" />
+
+        <TextView
+            android:id="@+id/shoe_description_editText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/shoes_description_editText"
+            android:textSize="12sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/shoe_description_text"
+            app:layout_constraintEnd_toEndOf="@+id/shoe_size_editText"
+            app:layout_constraintStart_toStartOf="@+id/shoe_size_editText"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/addShoes_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="48dp"
+            android:text="@string/shoes_details"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

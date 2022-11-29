@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <!-- Strings for LOGIN fragment -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email_textview">E-Mail</string>
+    <string name="password_textview">Password</string>
+    <string name="login_button">Sign in</string>
+    <string name="register_button">Sign up</string>
+
+    <!-- Strings for WELCOME fragment -->
+    <string name="welcome_textView">WELCOME</string>
+    <string name="please_press_continue_to_go_to_the_next_screen">Press CONTINUE to go to the next screen</string>
+    <string name="continue_button">Continue</string>
+
+    <!-- Strings for INSTRUCTIONS fragment -->
+    <string name="instructions_textView">Instructions</string>
+    <string name="instruction_one">1. Press NEXT to see the shoes.</string>
+    <string name="instruction_two">2. Press + to add shoes</string>
+
+    <!-- Strings for DETAILS fragment -->
+    <string name="shoes_details">Shoes Details</string>
+    <string name="shoes_company_textView">Shoes Company:</string>
+    <string name="shoes_company_editText">Enter company</string>
+    <string name="shoes_name_textView">Shoes name:</string>
+    <string name="shoes_name_editText">Enter name</string>
+    <string name="shoes_size_textView">Shoes size:</string>
+    <string name="shoes_size_editText">Enter size</string>
+    <string name="shoes_description_textView">Shoes description:</string>
+    <string name="shoes_description_editText">Enter description</string>
+</resources>
